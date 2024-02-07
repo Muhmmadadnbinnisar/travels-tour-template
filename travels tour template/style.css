@@ -1,0 +1,145 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(66, 41, 41);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav ul.nav-links li {
+    margin-right: 20px;
+}
+
+nav ul.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.nav-links li a i {
+    margin-right: 5px;
+}
+
+.content {
+    position: relative;
+    height: 100vh;
+    padding: 30px;
+}
+
+.colored-box {
+    position: absolute;
+    top: 11.5%;
+    left: 7.5%;
+    width: 37%;
+    height: 76%;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.colored-box p.about-company {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+
+.colored-box h1 {
+    color: #fff;
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.colored-box p.description {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learn-more-button:hover {
+    background-color: #333;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-bottom: auto;
+}
+
+.image img {
+    max-width: 70%;
+    height: auto;
+
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 97%;
+    clear: both;
+
+}
